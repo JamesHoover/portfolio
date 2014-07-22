@@ -7,7 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<h1>Hi<h1>
+  <nav>
+  <ul class="navbar">
+    <li><%= link_to "Home",    '#' %></li>
+    <li><%= link_to "Work",    '#' %></li>
+    <li><%= link_to "Contact", '#' %></li>
+    <li><%= link_to "About",   '#' %></li>
+    <li><%= link_to "Help",    '#' %></li>
+  </ul>
+</nav>
+
 <%= yield %>
 
 </body>
