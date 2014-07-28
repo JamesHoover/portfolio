@@ -1,0 +1,125 @@
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">JamesHooverDesign</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><a href="/work">Work</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="/about">About</a></li>
+          <li><a href="/help">Help</a></li>
+        </ul>
+      </section>
+    </nav>
+
+
+
+    <div class="small-10 small-centered columns">
+      <h1><%= yield(:title) %></h1>
+      <%= yield %>
+    </div>
+
+
+
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">Home</a></h1>
+        </li>        
+      </ul>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><a href="/work">Work</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="/about">About</a></li>
+          <li><a href="/help">Help</a></li>
+        </ul>
+      </section>
+    </nav>
+
+
+    
+/* CSS classes */
+.content-area {
+  padding-bottom: 500px;
+}
+ 
+.footer-area {
+  color: gray;
+  min-height: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+ 
+.full-width {
+  min-width:100%;
+  position: relative;
+}
+ 
+ /* Navbar main backdrop */
+.top-bar {
+  background: black;
+}
+
+/* Navbar buttons */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: black;
+}
+
+/* Navbar buttons hover */
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: orange;
+}
+
+/* Doesnt work 
+.top-bar-section li:not(.has-form) a:not(.button):active {
+  background: yellow;
+}
+*/
+.top-bar-section ul {
+  border-left: 1px solid white;
+}
+
+/* Navbar button text */
+.top-bar-section ul li > a {
+  color: white;
+}
+
+/* Navbar button right border */
+.top-bar-section li a{
+  border-right: 1px solid white;
+}
+/*
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: black;
+}
+*/
+.top-bar-section ul li.active > a {
+  background: white;
+  color: orange;
+  border: 1px solid red;
+}
+
+ /*Changes the hover state of non active menu items */
+.top-bar-section li:hover a {
+  background: yellow;
+  color: #fff;
+}
+
+/* Changes non active menu items text color to black 
+.top-bar-section ul li > a {
+    color: white;
+}
+*/
