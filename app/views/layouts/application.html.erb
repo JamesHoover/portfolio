@@ -19,7 +19,6 @@
         <a class="brand" href="/">JHD</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="/">Home</a></li>
             <li><a href="/work">Work</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/about">About</a></li>
@@ -30,17 +29,18 @@
     </div><!-- navbar-inner END -->
   </div><!-- navbar END -->
   <!-- UNIQUE CONTENT -->
-  <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <!--Sidebar content-->
+  <div class="container">
+    <div class="span1">
+      <!--Left Sidebar content-->
     </div>
     <div class="span10">
       <!--Body content-->
       <%= yield %>
     </div>
+    <div class="span1">
+      <!--right Sidebar content-->
+    </div>
   </div>
-</div>
   <!-- FOOTER -->
   <div class="push"></div>
   <div class="container-footer">
