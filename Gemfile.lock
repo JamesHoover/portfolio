@@ -35,8 +35,14 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     commonjs (0.2.7)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
     erubis (2.7.0)
     execjs (2.2.1)
+    foreman (0.74.0)
+      dotenv (~> 0.11.1)
+      thor (~> 0.19.1)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (1.5.3)
@@ -52,6 +58,7 @@ GEM
       actionpack (>= 3.1)
       less (~> 2.5.0)
     libv8 (3.16.14.3)
+    lite (0.0.8)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -130,9 +137,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  foreman
   jbuilder (~> 1.2)
   jquery-rails
   less-rails
+  lite
   pg
   rails (= 4.0.2)
   rails_12factor
