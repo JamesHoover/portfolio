@@ -24,12 +24,6 @@ p {
 }
 
 /* CSS classes */
-.navbar ul > a:active{
-  color: white;
-}
-
-.nav li > a:active {
-}
 
 .thumbnail {
   display: inline-block;
