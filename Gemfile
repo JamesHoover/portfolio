@@ -40,7 +40,7 @@ gem 'twitter-bootstrap-rails'
 gem 'rails_12factor', group: :production
 
 #process management
-gem 'lite'
+gem 'thin'
 gem 'foreman'
 
 # Use ActiveModel has_secure_password

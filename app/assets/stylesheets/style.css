@@ -26,7 +26,10 @@ p {
 /* CSS classes */
 
 .thumbnail {
-  display: inline-block;
+}
+
+#thumb-right {
+  float: right;
 }
 
 .divider {
@@ -34,7 +37,9 @@ p {
   padding-bottom: 20px;
 }
 
-.span10 {
+.span6 {
+  margin-left: 0px;
+  clear: both ;
 }
 
 /* Push footer down */
