@@ -12,5 +12,5 @@ class StaticPagesController < ApplicationController
   end
 
   def help
-  end
+  end  
 end

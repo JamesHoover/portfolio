@@ -8,8 +8,14 @@ html {
 }
 
 body {
-  padding-top: 70px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-weight: 100;
+  padding-top: 40px;
+}
+
+/* no padding on small screen size */
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
 }
 
 h1 {
@@ -24,8 +30,27 @@ p {
 }
 
 /* CSS classes */
+.navbar {
+  font-size: 20px;
+}
 
-.thumbnail {
+.nav {
+}
+.navbar-inner {
+}
+.brand {
+
+}
+.navbar-right {
+  float: right;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a:hover {
+  color: white;
+}
+
+a.thumbnail {
+  padding-top: auto;
 }
 
 #thumb-right {
@@ -34,12 +59,14 @@ p {
 
 .divider {
   border-top: 1px solid #eeeeee;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+}
+.divider-pad {
+  padding-bottom: 50px;
 }
 
-.span6 {
-  margin-left: 0px;
-  clear: both ;
+.span4 {
+ 
 }
 
 /* Push footer down */

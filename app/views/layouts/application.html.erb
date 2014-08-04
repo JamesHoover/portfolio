@@ -16,7 +16,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="/">JHD</a>
+        <a class="brand" href="/">Home</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li><a href="/work">Work</a></li>
@@ -28,23 +28,20 @@
       </div><!-- container END -->
     </div><!-- navbar-inner END -->
   </div><!-- navbar END -->
+  <!--<h1 class="visible-lg site-name"><a href="/">James<br>Hoover<br>Design</a></h1> -->
   <!-- UNIQUE CONTENT -->
   <div class="container">
-    <div class="span1">
-      <!--Left Sidebar content-->
+    <div class="row">
+      <div class="col-lg-10 span10">
+        <!--Body content-->
+        <%= yield %>
+      </div>
     </div>
-    <div class="span10">
-      <!--Body content-->
-      <%= yield %>
-    </div>
-    <div class="span1">
-      <!--right Sidebar content-->
-    </div>
+  <!--<div class="container-footer">
+    <h4>JamesHooverDesign<h4>
+  </div> -->
   </div>
   <!-- FOOTER -->
-  <div class="push"></div>
-  <div class="container-footer">
-    <h4>JamesHooverDesign<h4>
-  </div>
+  
 </body>
 </html>
