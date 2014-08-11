@@ -1,8 +1,10 @@
 Portfolio::Application.routes.draw do
-  root  'static_pages#home'
+  root  'static_pages#mywork'
+  match '/mywork', to: 'static_pages#mywork', via: 'get'
   match '/work', to: 'static_pages#work', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/info', to: 'static_pages#info', via: 'get'
   match '/help', to: 'static_pages#help', via: 'get'
 
   # Work pages

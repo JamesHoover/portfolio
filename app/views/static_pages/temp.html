@@ -1,3 +1,37 @@
+<!-- Nav -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div>
+          <ul class="nav">
+            <%=nav_link_to("My Work", mywork_path) %>
+            <%=nav_link_to("Info", info_path) %>
+          </ul>
+        </div><!-- nav-collapse END -->
+      </div><!-- container END -->
+    </div><!-- navbar-inner END -->
+  </div><!-- navbar END -->
+  <!--<h1 class="visible-lg site-name"><a href="/">James<br>Hoover<br>Design</a></h1> -->
+  <!-- UNIQUE CONTENT -->
+  <div class="container container-body">
+    <div class="row">
+      <div class="col-lg-10 span10">
+        <!--Body content-->
+        <%= yield %>
+      </div>
+    </div>
+  <!--<div class="container-footer">
+    <h4>JamesHooverDesign<h4>
+  </div> -->
+  </div>
+  <!-- FOOTER -->    
+
+
+
+
+
+
+
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name">

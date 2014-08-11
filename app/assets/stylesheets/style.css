@@ -1,6 +1,8 @@
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* HTML elements */
@@ -10,14 +12,19 @@ html {
 body {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-weight: 100;
-  padding-top: 40px;
+  background-color: #eeeeee;
 }
 
+@media (min-width: 979px) {
+  body { padding-top: 60px; }
+}
 /* no padding on small screen size */
 @media screen and (max-width: 768px) {
     body { padding-top: 0px; }
 }
+@media (max-width: 480px) {
 
+}
 h1 {
 }
 
@@ -30,31 +37,46 @@ p {
 }
 
 /* CSS classes */
+.container {
+  position: relative;
+}
+.container-body {
+  background-color: white;
+  padding: 1em;
+}
+.navbar .nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .navbar {
   font-size: 20px;
 }
 
-.nav {
-}
-.navbar-inner {
-}
-.brand {
-
-}
-.navbar-right {
-  float: right;
+.navbar .nav > li > a {
+  color: black;
 }
 
-.navbar-inverse .nav-collapse .nav > li > a:hover {
-  color: white;
+.navbar .container {
+  height: 2em;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  background-color: white;
+  color: black;
+}
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  background-color: white;
+  width: auto;
+  height: 3em;
+}
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container
+.container-body {
+
 }
 
 a.thumbnail {
   padding-top: auto;
-}
-
-#thumb-right {
-  float: right;
 }
 
 .divider {
@@ -65,19 +87,17 @@ a.thumbnail {
   padding-bottom: 50px;
 }
 
-.span4 {
- 
-}
-
-/* Push footer down */
-.push {
-  height: 300px;
-}
-
 /* Footer */
 .container-footer {
+  padding-top: 30px;
+  background-color: white;
   border-top: 1px solid #eeeeee;
   text-align: center;
+}
+.divider-footer {
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /*
 .container-footer {
