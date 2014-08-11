@@ -1,19 +1,15 @@
 Portfolio::Application.routes.draw do
   root  'static_pages#mywork'
   match '/mywork', to: 'static_pages#mywork', via: 'get'
-  match '/work', to: 'static_pages#work', via: 'get'
-  match '/about', to: 'static_pages#about', via: 'get'
-  match '/contact', to: 'static_pages#contact', via: 'get'
   match '/info', to: 'static_pages#info', via: 'get'
-  match '/help', to: 'static_pages#help', via: 'get'
 
   # Work pages
-  match '/work/one', to: 'static_pages#one', via: 'get'
-  match '/work/two', to: 'static_pages#two', via: 'get'
-  match '/work/three', to: 'static_pages#three', via: 'get'
-  match '/work/four', to: 'static_pages#four', via: 'get'
-  match '/work/five', to: 'static_pages#five', via: 'get'
-  match '/work/six', to: 'static_pages#six', via: 'get'
+  match '/mywork/one', to: 'static_pages#one', via: 'get'
+  match '/mywork/two', to: 'static_pages#two', via: 'get'
+  match '/mywork/three', to: 'static_pages#three', via: 'get'
+  match '/mywork/four', to: 'static_pages#four', via: 'get'
+  match '/mywork/five', to: 'static_pages#five', via: 'get'
+  match '/mywork/six', to: 'static_pages#six', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
