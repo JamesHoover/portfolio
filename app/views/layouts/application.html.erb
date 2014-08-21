@@ -13,7 +13,7 @@
       <div class="container">
         <div>
           <ul class="nav">
-            <li><a class="navbar-brand" href="/">James Hoover Design</a></li>
+            <li><a class="navbar-brand hidden-phone" href="/">James Hoover Design</a></li>
             <%=nav_link_to("My Work", root_path) %>
             <%=nav_link_to("Info", info_path) %>
           </ul>
@@ -26,8 +26,11 @@
   <div class="container container-body">
     <!--Body content-->
     <%= yield %>
-    <div class="divider-footer"></div>
     <div class="container-footer">
+      <br>
+      <a class="link-footer" href="/about">About</a>
+      <span>|</span>
+      <a class="link-footer" href="/help">Help</a>
       <h4>JamesHooverDesign<h4>
     </div>
   </div>
