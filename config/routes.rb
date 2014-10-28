@@ -1,17 +1,18 @@
 Portfolio::Application.routes.draw do
-  root  'static_pages#mywork'
-  match '/mywork', to: 'static_pages#mywork', via: 'get'
-  match '/info', to: 'static_pages#info', via: 'get'
-  match '/about', to: 'static_pages#about', via: 'get'
-  match '/help', to: 'static_pages#help', via: 'get'
+  root  'static_pages#comingsoon'
+  match '/mywork', to: 'static_pages#comingsoon', via: 'get'
+  match '/info', to: 'static_pages#comingsoon', via: 'get'
+  match '/about', to: 'static_pages#comingsoon', via: 'get'
+  match '/help', to: 'static_pages#comingsoon', via: 'get'
+  match '/art', to: 'static_pages#comingsoon', via: 'get'
 
   # Work pages
-  match '/mywork/one', to: 'static_pages#one', via: 'get'
-  match '/mywork/two', to: 'static_pages#two', via: 'get'
-  match '/mywork/three', to: 'static_pages#three', via: 'get'
-  match '/mywork/four', to: 'static_pages#four', via: 'get'
-  match '/mywork/five', to: 'static_pages#five', via: 'get'
-  match '/mywork/six', to: 'static_pages#six', via: 'get'
+  match '/mywork/one', to: 'static_pages#comingsoon', via: 'get'
+  match '/mywork/two', to: 'static_pages#comingsoon', via: 'get'
+  match '/mywork/three', to: 'static_pages#comingsoon', via: 'get'
+  match '/mywork/four', to: 'static_pages#comingsoon', via: 'get'
+  match '/mywork/five', to: 'static_pages#comingsoon', via: 'get'
+  match '/mywork/six', to: 'static_pages#comingsoon', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -7,34 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- Nav -->
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <div>
-          <ul class="nav">
-            <li><a class="navbar-brand hidden-phone" href="/">James Hoover Design</a></li>
-            <%=nav_link_to("My Work", root_path) %>
-            <%=nav_link_to("Info", info_path) %>
-          </ul>
-        </div><!-- nav-collapse END -->
-      </div><!-- container END -->
-    </div><!-- navbar-inner END -->
-  </div><!-- navbar END -->
-  <!--<h1 class="visible-lg site-name"><a href="/">James<br>Hoover<br>Design</a></h1> -->
+
   <!-- UNIQUE CONTENT -->
   <div class="container container-body">
     <!--Body content-->
     <%= yield %>
     <div class="container-footer">
       <br>
-      <a class="link-footer" href="/about">About</a>
-      <span>|</span>
-      <a class="link-footer" href="/help">Help</a>
       <h4>JamesHooverDesign<h4>
     </div>
   </div>
   <!-- FOOTER -->
-
 </body>
 </html>
